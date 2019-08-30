@@ -3,8 +3,8 @@ stages:
   steps:
   - publishCatalogConfig:
       path: ./alpine/
-      catalogTemplate: ${CHART_APP_NAME}
-      version: ${CHART_APP_VERSION}
+      catalogTemplate: $CHART_APP_NAME
+      version: $CHART_APP_VERSION
       gitUrl: https://github.com/bmdepesa/test-charts.git
       gitBranch: master
       gitAuthor: brandon
