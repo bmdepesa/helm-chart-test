@@ -1,6 +1,6 @@
 name: alpine-test-v1
-description: Deploy a basic Alpine Linux pod - test v1
-version: 0.1.0
+description: ${CHART_DESCRIPTION}
+version: ${CHART_VERSION}
 home: https://github.com/helm/helm
 sources:
   - https://github.com/helm/helm
