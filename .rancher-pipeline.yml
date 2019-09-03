@@ -4,7 +4,7 @@ stages:
   - publishCatalogConfig:
       path: ./alpine/
       catalogTemplate: alpine-test-brandon
-      version: ${CHART_VERSION}
+      version: v2
       gitUrl: https://github.com/bmdepesa/test-charts.git
       gitBranch: master
       gitAuthor: brandon
