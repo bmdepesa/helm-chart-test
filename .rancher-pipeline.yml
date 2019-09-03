@@ -3,20 +3,20 @@ stages:
   steps:
   - publishCatalogConfig:
       path: ./alpine/
-      catalogTemplate: ${CHART_APP_NAME}
-      version: ${CHART_APP_VERSION}
+      catalogTemplate: alpine-test-brandon
+      version: ${CHART_VERSION}
       gitUrl: https://github.com/bmdepesa/test-charts.git
       gitBranch: master
       gitAuthor: brandon
       gitEmail: brandon@gmail.com
     env:
-      CHART_APP_NAME: test-chart
-      CHART_APP_VERSION: v1
+      CHART_DESCRIPTION: test description from file
+      CHART_VERSION: v3
     envFrom:
-    - sourceName: test-secret
+    - sourceName: git
       sourceKey: USERNAME
       targetKey: USERNAME
-    - sourceName: test-secret
+    - sourceName: git
       sourceKey: PASSWORD
       targetKey: PASSWORD
 timeout: 60
