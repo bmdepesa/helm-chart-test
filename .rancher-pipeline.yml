@@ -20,4 +20,14 @@ stages:
       sourceKey: PASSWORD
       targetKey: PASSWORD
 timeout: 60
-notification: {}
+notification:
+  recipients:
+  - recipient: brandon.depesa+rancher1@gmail.com
+    notifier: c-98bwr:n-bp4sj
+  - recipient: brandon.depesa+rancher2@gmail.com
+    notifier: c-98bwr:n-bp4sj
+  - recipient: brandon.depesa+rancher3@gmail.com
+    notifier: c-98bwr:n-bp4sj
+  condition:
+  - Success
+  - Failed
