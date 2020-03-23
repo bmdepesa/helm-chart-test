@@ -1,6 +1,6 @@
 name: alpine-test-v1
-description: ${CHART_DESCRIPTION}
-version: ${CHART_VERSION}
+description: description
+version: 3.3
 home: https://github.com/helm/helm
 sources:
   - https://github.com/helm/helm
